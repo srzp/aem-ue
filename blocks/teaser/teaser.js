@@ -42,6 +42,9 @@ export default function decorate(block) {
   // Mark the first H1-H6 as a title
   block.querySelector('h1,h2,h3,h4,h5,h6').classList.add('title');
 
+  // Clase para el boton
+  block.querySelector('a').classList.add('button');
+
   // Process each paragraph and mark it as text or terms-and-conditions
   block.querySelectorAll('p').forEach((p) => {
     const innerHTML = p.innerHTML?.trim();
